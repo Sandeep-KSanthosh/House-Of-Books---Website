@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.501),rgba(0, 0, 0, 0.552)), url('https://cdn.pixabay.com/photo/2015/10/21/12/00/comics-999504_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.logo {
+    width: 150px;
+    cursor: pointer;
+}
+
+nav button {
+    border: 0;
+    outline: 0;
+    background: #db0001;
+    color: #fff;
+    margin-left: 10px;
+    padding: 7px 20px;
+    cursor: pointer;
+}
+
+.lang {
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid white;
+    padding: 7px 10px;
+}
+
+.lang img {
+    width: 10px;
+    margin-left: 10px;
+}
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 18px;
+}
+
+.header-content h1 {
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 600;
+    max-width: 650px;
+}
+
+.header-content h3 {
+    font-weight: 400px;
+    margin-bottom: 20px;
+}
+
+.email {
+    background: #fff;
+    width: 600px;
+    border-radius: 30px;
+    /* background: transparent; */
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    overflow: hidden;
+    margin-left: 55px;
+}
+
+.email input {
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+}
+
+.email button {
+    background: #737171;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 15px 30px;
+}
+
+
+
+.row1{
+    font-size:x-large;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(19, 2, 2);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    /* height: 100px; */
+    background-color: rgb(177, 173, 173);
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.row {
+    width: 100%;
+    height: 325px;
+    background-color: rgb(177, 173, 173);
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.col {
+    background-color: rgb(245, 255, 252);
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+}
+
+.col img {
+    padding-left: 82px;
+    padding-top: 25px;
+    height: 200px;
+    transition: all 1s ease-in-out;
+}
+
+.col img:hover{
+    transform: scale(1.05,1.05)
+}
+
+.col {
+    
+    --g: 12px;     /* the gap */
+    --b: 7px;    /* border thickness*/
+    --c: rgb(177, 173, 173); /* the color */
+    --_c: #fffffffb 0 25%, var(--c) 0 50%;
+    --_g1: repeating-linear-gradient(90deg ,var(--_c)) repeat-x;
+    --_g2: repeating-linear-gradient(180deg,var(--_c)) repeat-y;
+    background:
+      var(--_g1) var(--_p, 25%) 0   ,var(--_g2) 0    var(--_p,125%),
+      var(--_g1) var(--_p,125%) 100%,var(--_g2) 100% var(--_p, 25%);
+       background-size: 200% var(--b),var(--b) 200%;
+
+    
+    cursor: pointer;
+    /* filter: grayscale(50%); */
+    transition: .3s;
+  }
+  .col:hover {
+    --_p: 75%;
+    filter: grayscale(0%);
+  }
+
+
+hr {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        border-color: rgb(150, 147, 147) ;
+      }
+
+.banner {
+    width: 100%;
+    height: 650px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+
+}
+
+h4 {
+    text-align: center;
+}
+
+.btn {
+    align-items: center;
+    color: white;
+    background-color: red;
+    margin-left: 118px;
+    margin-top: 10px;
+    border: 0;
+    outline: 0;
+    padding: 5px;
+}
+
+.btn:hover{
+background: rgb(4, 132, 68);
+color: white;
+}
+
+
+/* -----------------------footer------------------------ */
+.container{
+	max-width: 1565.25px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+    margin:0;
+	padding:0;
+	box-sizing: border-box;
+    line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+.footer-col{
+   width: 15%;
+   margin-top: 50px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #626061;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+/* ---------------------------------------------------------------------- */
+@media screen and (max-width:480px){
+
+    .email{
+        max-width: 400px;
+        margin-right: 55px;
+    }
+    
+    .btn {
+        align-items: center;
+        color: white;
+        background-color: red;
+        margin-left: 60px;
+        margin-top: 10px;
+        padding-right:100px;
+        border: 0;
+        outline: 0;
+        padding: 5px;
+    }
+
+     .lang {
+        display: inline-flex;
+        background: transparent;
+        border: 1px solid white;
+        padding: 7px 5px;
+    }
+    .header-content p{
+        width: 350px;
+        margin-left: 70px;
+    }
+    .row1{
+        flex-direction: row-reverse;
+        overflow: hidden;
+    }
+}
